@@ -1,0 +1,247 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Ubuntu&display=swap'); */
+
+/* font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Ubuntu', sans-serif; */
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION STYLE */
+
+#navbar {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    /* position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2; */
+}
+.nav-color{
+    background-color: #54575dbf;
+}
+
+#left-logo img {
+    width: 55px;
+    height: 55px;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+#nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-list li {
+    list-style: none;
+    /* border: 2px solid black; */
+    margin: 0px 12px;
+}
+
+#nav-list li a {
+    text-decoration: none;
+    padding: 11px;
+    font-size: 20px;
+    color: #EAF0F1;
+}
+
+#nav-list li a:hover {
+    border-bottom: 2px solid #EAF0F1;
+    border-width: 3px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+#right-search {
+    margin: 11px;
+    /* border: 2px solid red; */
+    background-color: #EAF0F1;
+    border-radius: 6px;
+    padding-right: 3px;
+}
+
+#right-search input {
+    outline: none;
+    border: none;
+    padding: 4px;
+    color: #2C3335;
+    background: transparent;
+}
+
+.btn-sm {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-sm i {
+    padding: 5px;
+    color: #2C3335;
+}
+#burger{
+    display: none;
+    padding: 2px;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+
+}
+.burger-line{
+    width: 22px;
+    margin: 3px 0px;
+    height: 3px;
+    background-color: white;
+}
+#line-2{
+    margin-left: 4px;
+}
+#line-3{
+    margin-left: 8px;
+}
+
+/* CONTENT STYLE */
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 23px;
+    
+    /* margin: 12px; */
+    /* border: 2px solid red; */
+    height: 100vh;
+}
+
+#left-half {
+    padding: 18px;
+}
+#right-half{
+    padding-right: 25px;
+}
+
+#right-half img {
+    width: 400px;
+    /* height: 200px; */
+    border-radius: 25px;
+    display: block;
+    margin: 2px auto;
+}
+
+#main {
+    font-family: 'Baloo Bhai 2', cursive;
+    background: url("../images/bg.jpg") no-repeat center center/cover;
+    opacity: 0.89;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* height: 100vh; */
+}
+
+/* FEATURES */
+
+#item1 {
+    grid-area: ap;
+}
+
+#item2 {
+    grid-area: ai;
+}
+
+#item3 {
+    grid-area: bi;
+}
+
+#item4 {
+    grid-area: bp;
+}
+
+#item5 {
+    grid-area: cp;
+}
+
+#item6 {
+    grid-area: ci;
+}
+
+#features {
+    font-family: 'Ubuntu', sans-serif;
+    display: grid;
+    grid-gap: 30px 10px;
+    grid-template-areas: 
+        'ap ap ap ap ap ai ai ai'
+        'bi bi bi bp bp bp bp bp' 
+        'cp cp cp cp cp ci ci ci';
+    /* background-color: #54575dbf; */
+    background: url("../images/feature_img.jpg") no-repeat center center/cover;
+    /* opacity: 0.88; */
+    padding-top: 20px;
+    position: sticky;
+    z-index: 3;
+}
+
+#features>div {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 30px;
+}
+
+.feature-img{
+    width: 294px;
+    padding: 10px;
+    border-radius: 47px;
+    display: block;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn {
+    border: 2px solid gray;
+    outline: none;
+    cursor: pointer;
+    margin: 24px 10px 0px 0px;
+    padding: 9px;
+    font-size: 1.1rem;
+    background-color: #2332359c;
+    color: whitesmoke;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #EAF0F1;
+    color: darkblue;
+    transform: translateY(-10px);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+h2 {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
