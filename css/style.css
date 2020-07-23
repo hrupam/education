@@ -110,13 +110,15 @@ body {
 }
 
 #line-2 {
+    transition-delay: 0.85s;
     margin-left: 4px;
-    transition: 0.3s;
+    transition-duration: 0.3s;
 }
 
 #line-3 {
+    transition-delay: 0.85s;
     margin-left: 8px;
-    transition: 0.3s;
+    transition-duration: 0.3s;
 }
 
 /* CONTENT STYLE */
