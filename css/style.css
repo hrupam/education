@@ -8,23 +8,25 @@ font-family: 'Ubuntu', sans-serif; */
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     scroll-behavior: smooth;
 }
 
 /* NAVIGATION STYLE */
 
 #navbar {
-    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.nav-color{
+
+.nav-color {
     background-color: #54575dbf;
 }
-#left-logo{
+
+#left-logo {
     padding: 6px;
 }
 
@@ -91,25 +93,30 @@ body{
     padding: 5px;
     color: #2C3335;
 }
-#burger{
+
+#burger {
     display: none;
     padding: 2px;
     position: absolute;
     top: 3px;
     right: 5px;
-
 }
-.burger-line{
+
+.burger-line {
     width: 22px;
     margin: 3px 0px;
     height: 3px;
     background-color: white;
 }
-#line-2{
+
+#line-2 {
     margin-left: 4px;
+    transition: 0.3s;
 }
-#line-3{
+
+#line-3 {
     margin-left: 8px;
+    transition: 0.3s;
 }
 
 /* CONTENT STYLE */
@@ -120,7 +127,6 @@ body{
     justify-content: center;
     align-items: center;
     padding: 23px;
-    
     /* margin: 12px; */
     /* border: 2px solid red; */
     height: 100vh;
@@ -129,7 +135,8 @@ body{
 #left-half {
     padding: 18px;
 }
-#right-half{
+
+#right-half {
     padding-right: 25px;
 }
 
@@ -181,10 +188,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
     display: grid;
     grid-gap: 30px 10px;
-    grid-template-areas: 
-        'ap ap ap ap ap ai ai ai'
-        'bi bi bi bp bp bp bp bp' 
-        'cp cp cp cp cp ci ci ci';
+    grid-template-areas: 'ap ap ap ap ap ai ai ai' 'bi bi bi bp bp bp bp bp' 'cp cp cp cp cp ci ci ci';
     /* background-color: #54575dbf; */
     background: url("../images/feature_img.jpg") no-repeat center center/cover;
     /* opacity: 0.88; */
@@ -202,7 +206,7 @@ body{
     padding: 30px;
 }
 
-.feature-img{
+.feature-img {
     width: 294px;
     padding: 10px;
     border-radius: 47px;
